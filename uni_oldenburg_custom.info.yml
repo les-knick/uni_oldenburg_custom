@@ -7,4 +7,4 @@ core_version_requirement: ^8 || ^9
 base theme: olivero
 # Defines libraries group in which we can add css/js.
 libraries:
-  - uni_oldenburg_cutsom/global-styling
+  - uni_oldenburg_custom/global-styling
