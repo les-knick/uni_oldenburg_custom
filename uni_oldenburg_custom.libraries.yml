@@ -1,0 +1,4 @@
+global-styling:
+  css:
+    component:
+      asstes/css/style.css: {}

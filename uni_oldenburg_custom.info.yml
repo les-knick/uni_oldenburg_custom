@@ -1,0 +1,10 @@
+name: Uni Oldenburg Custom
+type: theme
+description: Custom Theme for STAK by Uni Oldenburg
+core: 8.x
+core_version_requirement: ^8 || ^9
+# Defines the base theme
+base theme: olivero
+# Defines libraries group in which we can add css/js.
+libraries:
+  - uni_oldenburg_cutsom/global-styling
