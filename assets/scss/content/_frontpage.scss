@@ -1,0 +1,39 @@
+.node--type-frontpage {
+    .node__title,
+    .node__meta,
+    .field__label {
+        display: none;
+    }
+    .field--name-field-headerbild {
+        .field__item {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+    }
+}
+
+.node--type-frontpage-top {
+    .node__title,
+    .node__meta {
+        display: none;
+    }
+    .layout__region.layout__region--content {
+        display: flex;
+        max-width: 1200px;
+        margin: 0 auto;
+        gap: 20px;
+        justify-content: space-between;
+        align-content: center;
+        .field--name-field-einstiegstext {
+            max-width: 50%;
+        }
+        .field--name-field-uberschrift {
+            height: intrinsic;
+            max-width: 42%;
+            margin: 0;
+            align-self: center;
+        }
+    }
+}

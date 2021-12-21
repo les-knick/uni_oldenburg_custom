@@ -1,7 +1,17 @@
 h2,
 .h2 {
-    color: $color-brown!important;
+    @include font-h2;
     * {
-        color: $color-brown!important;
+        @include font-h2;
+    }
+}
+
+.field--name-field-uberschrift {
+    @include font-h2;
+}
+
+.node--type-frontpage-top {
+    .field--name-field-einstiegstext {
+        @include font-big-text;
     }
 }

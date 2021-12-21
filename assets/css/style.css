@@ -1,19 +1,135 @@
 h2,
 .h2 {
-  color: #C37B1C !important; }
+  color: #C37B1C !important;
+  letter-spacing: 0;
+  margin-top: 2.25rem;
+  margin-bottom: 2.25rem;
+  font-family: "metropolis", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 3rem; }
   h2 *,
   .h2 * {
-    color: #C37B1C !important; }
+    color: #C37B1C !important;
+    letter-spacing: 0;
+    margin-top: 2.25rem;
+    margin-bottom: 2.25rem;
+    font-family: "metropolis", sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 3rem; }
+
+.field--name-field-uberschrift {
+  color: #C37B1C !important;
+  letter-spacing: 0;
+  margin-top: 2.25rem;
+  margin-bottom: 2.25rem;
+  font-family: "metropolis", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 3rem; }
+
+.node--type-frontpage-top .field--name-field-einstiegstext {
+  font-family: "metropolis", sans-serif;
+  font-size: 23px;
+  line-height: 40px;
+  color: #04435A; }
 
 .page-wrapper {
   max-width: 100%; }
+
+#block-uni-oldenburg-custom-content {
+  grid-column: 1 / 15; }
+
+.contextual,
+.view-content {
+  grid-column: 1/15 !important; }
+
+.node--type-frontpage .node__title,
+.node--type-frontpage .node__meta,
+.node--type-frontpage .field__label {
+  display: none; }
+
+.node--type-frontpage .field--name-field-headerbild .field__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0; }
+
+.node--type-frontpage-top .node__title,
+.node--type-frontpage-top .node__meta {
+  display: none; }
+
+.node--type-frontpage-top .layout__region.layout__region--content {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+  justify-content: space-between;
+  align-content: center; }
+  .node--type-frontpage-top .layout__region.layout__region--content .field--name-field-einstiegstext {
+    max-width: 50%; }
+  .node--type-frontpage-top .layout__region.layout__region--content .field--name-field-uberschrift {
+    height: intrinsic;
+    max-width: 42%;
+    margin: 0;
+    align-self: center; }
+
+header .container {
+  max-width: 100vw; }
+
+header .site-header__initial,
+header .sticky-header-toggle {
+  background-color: white; }
+  header .site-header__initial .sticky-header-toggle__icon span,
+  header .sticky-header-toggle .sticky-header-toggle__icon span {
+    border-top: solid 3px black; }
+
+header #block-uni-oldenburg-custom-site-branding {
+  background: none; }
+
+header.site-header--frontpage {
+  height: 700px; }
+  header.site-header--frontpage .site-header--frontpage__header-img,
+  header.site-header--frontpage .site-header--frontpage__overlay--orange {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    height: 700px; }
+  header.site-header--frontpage .site-header--frontpage__overlay--orange {
+    background-color: #C37B1C;
+    mix-blend-mode: multiply; }
+  header.site-header--frontpage .site-header__fixable #site-header__inner,
+  header.site-header--frontpage .site-header__fixable .site-header__initial,
+  header.site-header--frontpage .site-header__fixable .sticky-header-toggle,
+  header.site-header--frontpage .site-header__fixable #header-nav {
+    background-color: transparent; }
+  header.site-header--frontpage .site-header__fixable .primary-nav__menu-link-inner,
+  header.site-header--frontpage .site-header__fixable .secondary-nav__menu-link,
+  header.site-header--frontpage .site-header__fixable .block-search-wide__button svg {
+    color: white; }
+  header.site-header--frontpage .site-header__fixable.is-fixed #site-header__inner,
+  header.site-header--frontpage .site-header__fixable.is-fixed .site-header__initial,
+  header.site-header--frontpage .site-header__fixable.is-fixed .sticky-header-toggle,
+  header.site-header--frontpage .site-header__fixable.is-fixed #header-nav {
+    background-color: white; }
+  header.site-header--frontpage .site-header__fixable.is-fixed .primary-nav__menu-link-inner,
+  header.site-header--frontpage .site-header__fixable.is-fixed .secondary-nav__menu-link,
+  header.site-header--frontpage .site-header__fixable.is-fixed .block-search-wide__button svg {
+    color: black; }
 
 body {
   color: #000000;
   background-color: #ffffff;
   background-image: none; }
+  body .social-bar {
+    background-color: white; }
 
 footer.site-footer {
   background-color: #04435A !important;
   border-left: none !important;
   background: none; }
+  footer.site-footer:after {
+    box-sizing: unset; }
