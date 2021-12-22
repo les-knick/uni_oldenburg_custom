@@ -10,3 +10,13 @@
 .view-content {
     grid-column: 1 / 15!important;
 }
+
+.container {
+    max-width: unset;
+}
+
+@media only screen and (min-width: 1500px) {
+    .container {
+        margin-left: -5rem;
+    }
+}

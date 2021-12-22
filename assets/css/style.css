@@ -45,6 +45,13 @@ h2,
 .view-content {
   grid-column: 1/15 !important; }
 
+.container {
+  max-width: unset; }
+
+@media only screen and (min-width: 1500px) {
+  .container {
+    margin-left: -5rem; } }
+
 .node--type-frontpage .node__title,
 .node--type-frontpage .node__meta,
 .node--type-frontpage .field__label {
