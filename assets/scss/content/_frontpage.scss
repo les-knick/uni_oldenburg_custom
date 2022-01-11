@@ -14,6 +14,12 @@
     }
 }
 
+.main-wrapper--frontpage {
+    h1.page-title {
+        display: none;
+    }
+}
+
 .node--type-frontpage-top {
     .node__title,
     .node__meta {

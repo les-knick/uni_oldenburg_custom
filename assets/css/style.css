@@ -63,6 +63,9 @@ h2,
   left: 0;
   right: 0; }
 
+.main-wrapper--frontpage h1.page-title {
+  display: none; }
+
 .node--type-frontpage-top .node__title,
 .node--type-frontpage-top .node__meta {
   display: none; }
