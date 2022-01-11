@@ -140,6 +140,15 @@ header.site-header--frontpage {
 nav.breadcrumb {
   display: none; }
 
+.mobile-buttons {
+  margin-top: 40px !important; }
+  .mobile-buttons button.mobile-nav-button {
+    color: white; }
+    .mobile-buttons button.mobile-nav-button .mobile-nav-button__icon:after,
+    .mobile-buttons button.mobile-nav-button .mobile-nav-button__icon:before,
+    .mobile-buttons button.mobile-nav-button .mobile-nav-button__icon {
+      background-color: white !important; }
+
 body {
   color: #000000;
   background-color: #ffffff;
