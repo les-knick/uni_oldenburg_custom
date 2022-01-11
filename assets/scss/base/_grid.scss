@@ -11,12 +11,12 @@
     grid-column: 1 / 15!important;
 }
 
-.container {
+.main-content .container {
     max-width: unset;
 }
 
 @media only screen and (min-width: 1500px) {
-    .container {
+    .main-wrapper--frontpage .main-content .container {
         margin-left: -5rem;
     }
 }

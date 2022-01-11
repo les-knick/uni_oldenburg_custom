@@ -17,12 +17,12 @@ Items for the breadcrumb region. * - page.social: Items for the social region. *
             <div class="site-header__fixable" data-drupal-selector="site-header-fixable">
                 <div class="site-header__initial">
                     <button class="sticky-header-toggle" data-drupal-selector="sticky-header-toggle" role="switch" aria-controls="site-header__inner" aria-label="{{ 'Sticky header'|t }}" aria-checked="false">
-              <span class="sticky-header-toggle__icon">
-                <span></span>
-                <span></span>
-                <span></span>
-              </span>
-            </button>
+							<span class="sticky-header-toggle__icon">
+								<span></span>
+								<span></span>
+								<span></span>
+							</span>
+						</button>
                 </div>
 
                 {# Needs to extend full width so box shadow will also extend. #}
@@ -32,9 +32,9 @@ Items for the breadcrumb region. * - page.social: Items for the social region. *
                         {{ page.header }} {% if page.primary_menu or page.secondary_menu %}
                         <div class="mobile-buttons" data-drupal-selector="mobile-buttons">
                             <button class="mobile-nav-button" data-drupal-selector="mobile-nav-button" aria-label="{{ 'Main Menu'|t }}" aria-controls="header-nav" aria-expanded="false">
-                    <span class="mobile-nav-button__label">{{ 'Menu'|t }}</span>
-                    <span class="mobile-nav-button__icon"></span>
-                  </button>
+										<span class="mobile-nav-button__label">{{ 'Menu'|t }}</span>
+										<span class="mobile-nav-button__icon"></span>
+									</button>
                         </div>
 
                         <div id="header-nav" class="header-nav" data-drupal-selector="header-nav">
@@ -47,7 +47,7 @@ Items for the breadcrumb region. * - page.social: Items for the social region. *
         </header>
         {% endif %}
 
-        <div id="main-wrapper" class="layout-main-wrapper layout-container">
+        <div id="main-wrapper" class="layout-main-wrapper main-wrapper--frontpage layout-container">
             <div id="main" class="layout-main">
                 <div class="main-content">
                     <a id="main-content" tabindex="-1"></a>
