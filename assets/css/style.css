@@ -52,6 +52,9 @@ h2,
   .main-wrapper--frontpage .main-content .container {
     margin-left: -5rem; } }
 
+[dir="ltr"] .wide-image {
+  margin-left: 0 !important; }
+
 .node--type-frontpage .node__title,
 .node--type-frontpage .node__meta,
 .node--type-frontpage .field__label {
