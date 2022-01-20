@@ -11,6 +11,9 @@
         }
     }
     .layout__region--second-above {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         * {
             color: $color-petrol;
         }

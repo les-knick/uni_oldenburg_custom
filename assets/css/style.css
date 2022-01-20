@@ -103,19 +103,23 @@ h2,
     height: 100px; }
   .layout--twocol-bricks .layout__region--first-above img {
     width: 100%; }
-  .layout--twocol-bricks .layout__region--second-above * {
-    color: #04435A; }
-  .layout--twocol-bricks .layout__region--second-above > .field:nth-child(1) {
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 3px; }
-  .layout--twocol-bricks .layout__region--second-above > .field:nth-child(2) {
-    font-size: 60px;
-    font-weight: 900;
-    color: #C37B1C; }
-  .layout--twocol-bricks .layout__region--second-above > .field:nth-child(3) {
-    font-size: 30px; }
+  .layout--twocol-bricks .layout__region--second-above {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .layout--twocol-bricks .layout__region--second-above * {
+      color: #04435A; }
+    .layout--twocol-bricks .layout__region--second-above > .field:nth-child(1) {
+      font-size: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 3px; }
+    .layout--twocol-bricks .layout__region--second-above > .field:nth-child(2) {
+      font-size: 60px;
+      font-weight: 900;
+      color: #C37B1C; }
+    .layout--twocol-bricks .layout__region--second-above > .field:nth-child(3) {
+      font-size: 30px; }
 
 .layout--twocol-bricks > .layout__region--first-above,
 .layout--twocol-bricks > .layout__region--second-above,
