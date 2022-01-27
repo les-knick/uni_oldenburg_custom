@@ -6,16 +6,22 @@ header {
     .sticky-header-toggle {
         background-color: white;
         .sticky-header-toggle__icon span {
-            border-top: solid 3px black;
+            border-top: solid 3px $color-petrol;
         }
     }
     #block-uni-oldenburg-custom-branding {
         background: none;
     }
+    .primary-nav__menu-link-inner:after {
+        border-color: $color-petrol;
+    }
 }
 
 header.site-header--frontpage {
     height: 700px;
+    .primary-nav__menu-link-inner:after {
+        border-color: white;
+    }
     .site-header--frontpage__header-img,
     .site-header--frontpage__overlay--orange {
         position: absolute;
@@ -52,7 +58,10 @@ header.site-header--frontpage {
         .primary-nav__menu-link-inner,
         .secondary-nav__menu-link,
         .block-search-wide__button svg {
-            color: black;
+            color: $color-petrol;
+        }
+        .primary-nav__menu-link-inner:after {
+            border-color: $color-petrol;
         }
     }
 }

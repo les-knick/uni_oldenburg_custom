@@ -190,13 +190,18 @@ header .sticky-header-toggle {
   background-color: white; }
   header .site-header__initial .sticky-header-toggle__icon span,
   header .sticky-header-toggle .sticky-header-toggle__icon span {
-    border-top: solid 3px black; }
+    border-top: solid 3px #04435A; }
 
 header #block-uni-oldenburg-custom-branding {
   background: none; }
 
+header .primary-nav__menu-link-inner:after {
+  border-color: #04435A; }
+
 header.site-header--frontpage {
   height: 700px; }
+  header.site-header--frontpage .primary-nav__menu-link-inner:after {
+    border-color: white; }
   header.site-header--frontpage .site-header--frontpage__header-img,
   header.site-header--frontpage .site-header--frontpage__overlay--orange {
     position: absolute;
@@ -225,7 +230,9 @@ header.site-header--frontpage {
   header.site-header--frontpage .site-header__fixable.is-fixed .primary-nav__menu-link-inner,
   header.site-header--frontpage .site-header__fixable.is-fixed .secondary-nav__menu-link,
   header.site-header--frontpage .site-header__fixable.is-fixed .block-search-wide__button svg {
-    color: black; }
+    color: #04435A; }
+  header.site-header--frontpage .site-header__fixable.is-fixed .primary-nav__menu-link-inner:after {
+    border-color: #04435A; }
 
 nav.breadcrumb {
   display: none; }
