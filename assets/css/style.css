@@ -1,6 +1,6 @@
 h2,
 .h2 {
-  color: #C37B1C !important;
+  color: #FAA737 !important;
   letter-spacing: 0;
   margin-top: 2.25rem;
   margin-bottom: 2.25rem;
@@ -10,7 +10,7 @@ h2,
   line-height: 3rem; }
   h2 *,
   .h2 * {
-    color: #C37B1C !important;
+    color: #FAA737 !important;
     letter-spacing: 0;
     margin-top: 2.25rem;
     margin-bottom: 2.25rem;
@@ -19,8 +19,25 @@ h2,
     font-size: 2rem;
     line-height: 3rem; }
 
+.link--arrow a,
+.link--arrow .a {
+  text-decoration: none; }
+  .link--arrow a::after,
+  .link--arrow .a::after {
+    background-image: url(../img/arrow--right--blue.png);
+    background-size: 100% 100%;
+    width: 16px;
+    height: 16px;
+    content: '';
+    display: inline-block;
+    margin-left: 10px;
+    transform: translateY(3px); }
+
+.home__category-list__wrapper__title {
+  color: black !important; }
+
 .field--name-field-uberschrift {
-  color: #C37B1C !important;
+  color: #FAA737 !important;
   letter-spacing: 0;
   margin-top: 2.25rem;
   margin-bottom: 2.25rem;
@@ -88,6 +105,32 @@ h2,
     margin: 0;
     align-self: center; }
 
+.home--category-list--wrapper .views-row:nth-child(even) .layout--twocol {
+  flex-direction: row-reverse !important; }
+
+.field--name-field-home-kategorie-teaserliste .views-element-container {
+  max-width: 790px;
+  margin: 0 auto; }
+  .field--name-field-home-kategorie-teaserliste .views-element-container .views-row {
+    border-top: 3px solid #FAA737;
+    padding-top: 50px; }
+    .field--name-field-home-kategorie-teaserliste .views-element-container .views-row .layout--twocol {
+      justify-content: space-between;
+      margin-bottom: 0;
+      flex-direction: row; }
+      .field--name-field-home-kategorie-teaserliste .views-element-container .views-row .layout--twocol > .layout__region--first {
+        flex: 0 1 25%; }
+        .field--name-field-home-kategorie-teaserliste .views-element-container .views-row .layout--twocol > .layout__region--first .field--name-field-category-teaser-img {
+          width: 100%;
+          aspect-ratio: 1/1.5;
+          height: 100%; }
+          .field--name-field-home-kategorie-teaserliste .views-element-container .views-row .layout--twocol > .layout__region--first .field--name-field-category-teaser-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
+      .field--name-field-home-kategorie-teaserliste .views-element-container .views-row .layout--twocol > .layout__region--second {
+        flex: 0 1 60%; }
+
 @media only screen and (max-width: 981px) {
   .node--type-frontpage-top .layout__region.layout__region--content {
     flex-direction: column; }
@@ -109,16 +152,17 @@ h2,
     justify-content: center; }
     .layout--twocol-bricks .layout__region--second-above * {
       color: #04435A; }
-    .layout--twocol-bricks .layout__region--second-above > .field:nth-child(1) {
+    .layout--twocol-bricks .layout__region--second-above > .field.topline {
       font-size: 20px;
       font-weight: bold;
       text-transform: uppercase;
       letter-spacing: 3px; }
-    .layout--twocol-bricks .layout__region--second-above > .field:nth-child(2) {
+    .layout--twocol-bricks .layout__region--second-above > .field.h1 {
       font-size: 60px;
+      line-height: 74px;
       font-weight: 900;
-      color: #C37B1C; }
-    .layout--twocol-bricks .layout__region--second-above > .field:nth-child(3) {
+      color: #FAA737; }
+    .layout--twocol-bricks .layout__region--second-above > .field.subline {
       font-size: 30px; }
 
 .layout--twocol-bricks > .layout__region--first-above,
@@ -129,7 +173,7 @@ h2,
 
 .layout--twocol-bricks > .layout__region--first-below > .field,
 .layout--twocol-bricks > .layout__region--second-below > .field {
-  border-bottom: 3px solid #C37B1C;
+  border-bottom: 3px solid #FAA737;
   padding-bottom: 50px;
   margin-bottom: 0;
   padding-top: 50px;
@@ -162,7 +206,7 @@ header.site-header--frontpage {
     width: 100vw;
     height: 700px; }
   header.site-header--frontpage .site-header--frontpage__overlay--orange {
-    background-color: #C37B1C;
+    background-color: #FAA737;
     mix-blend-mode: multiply; }
   header.site-header--frontpage .site-header__fixable #site-header__inner,
   header.site-header--frontpage .site-header__fixable .site-header__initial,

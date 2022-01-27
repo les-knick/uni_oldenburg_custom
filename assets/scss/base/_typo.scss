@@ -6,6 +6,25 @@ h2,
     }
 }
 
+.link--arrow a,
+.link--arrow .a {
+    text-decoration: none;
+    &::after {
+        background-image: url(../img/arrow--right--blue.png);
+        background-size: 100% 100%;
+        width: 16px;
+        height: 16px;
+        content: '';
+        display: inline-block;
+        margin-left: 10px;
+        transform: translateY(3px);
+    }
+}
+
+.home__category-list__wrapper__title {
+    color: black!important;
+}
+
 .field--name-field-uberschrift {
     @include font-h2;
 }

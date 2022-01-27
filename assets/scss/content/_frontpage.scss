@@ -44,6 +44,42 @@
     }
 }
 
+.home--category-list--wrapper .views-row:nth-child(even) .layout--twocol {
+    flex-direction: row-reverse!important;
+}
+
+.field--name-field-home-kategorie-teaserliste {
+    .views-element-container {
+        max-width: 790px;
+        margin: 0 auto;
+        .views-row {
+            border-top: 3px solid $color-brown;
+            padding-top: 50px;
+            .layout--twocol {
+                justify-content: space-between;
+                margin-bottom: 0;
+                flex-direction: row;
+                >.layout__region--first {
+                    flex: 0 1 25%;
+                    .field--name-field-category-teaser-img {
+                        width: 100%;
+                        aspect-ratio: 1/1.5;
+                        height: 100%;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+                >.layout__region--second {
+                    flex: 0 1 60%;
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 981px) {
     .node--type-frontpage-top .layout__region.layout__region--content {
         flex-direction: column;
