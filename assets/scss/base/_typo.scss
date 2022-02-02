@@ -6,6 +6,21 @@ h2,
     }
 }
 
+h1,
+.h1 {
+    @include font-h1;
+    * {
+        @include font-h1;
+    }
+}
+
+.topline {
+    @include font-topline;
+    * {
+        @include font-topline;
+    }
+}
+
 .link--arrow a,
 .link--arrow .a {
     text-decoration: none;

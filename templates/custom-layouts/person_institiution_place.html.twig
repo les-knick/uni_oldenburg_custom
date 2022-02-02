@@ -1,0 +1,33 @@
+<div class="layout--person">
+    <div class="layout--person__top-wrapper">
+        <p class="topline">Person</p>
+        {{ content.top }}
+    </div>
+    <div class="layout--person__first-wrapper">
+        <div class="layout--person__first-wrapper__txt-wrapper">
+            <h3>Zugehörige Informationen</h3>
+        </div>
+    </div>
+    <div class="layout--person__second-wrapper flex">
+        <div class="layout--person__second-wrapper__inner">
+            {{ content.left_two }}
+        </div>
+        <div class="layout--person__second-wrapper__inner">
+            {{ content.right_two }}
+        </div>
+    </div>
+    <div class="layout--person__third-helper">
+        <h3>Verlinkungen / zugehörige Informationen</h3>
+        <div class="layout--person__third-wrapper flex">
+            <div class="layout--person__third-wrapper__inner">
+                {{ content.left_three }}
+            </div>
+            <div class="layout--person__third-wrapper__inner">
+                {{ content.mid_three }}
+            </div>
+            <div class="layout--person__third-wrapper__inner">
+                {{ content.right_three }}
+            </div>
+        </div>
+    </div>
+</div>

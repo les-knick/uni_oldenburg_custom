@@ -1,0 +1,17 @@
+person_institiution_place:
+  label: Person, Institiution & Place
+  category: Oldenburg Custom
+  template: templates/custom-layouts/person_institiution_place
+  regions:
+    top:
+      label: Top Content
+    left_two:
+      label: Left Middle
+    right_two:
+      label: Right Middle
+    left_three:
+      label: Left Bottom
+    mid_three:
+      label: Center Bottom
+    right_three:
+      label: Right Bottom

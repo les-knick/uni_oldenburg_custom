@@ -1,0 +1,49 @@
+.layout--person {
+    .layout--person__first-wrapper {
+        margin-top: 90px;
+    }
+    .layout--person__second-wrapper {
+        gap: 30px;
+        margin-bottom: 90px;
+        .layout--person__second-wrapper__inner {
+            flex: 0 1 50%;
+            .field {
+                border-bottom: 3px solid $color-brown;
+                padding-bottom: 50px;
+                margin-bottom: 0;
+                padding-top: 50px;
+                margin-top: 0;
+                .field__item .layout {
+                    margin: 0;
+                }
+            }
+        }
+    }
+    .layout--person__third-helper {
+        position: relative;
+        h3 {
+            padding-top: 80px;
+        }
+        &::before {
+            position: absolute;
+            background-color: $color-brown;
+            opacity: 0.15;
+            width: 100vw;
+            height: 100%;
+            content: '';
+            @media only screen and (min-width: 1200px) {
+                left: calc((((100vw - 100%) / 2) * -1) - 45px);
+            }
+            @media only screen and (max-width: 1199px) {
+                left: calc(((100vw - 100%) / 2) * -1);
+            }
+        }
+        .layout--person__third-wrapper {
+            gap: 30px;
+            .layout--person__third-wrapper__inner {
+                flex: 0 1 33%;
+                padding-bottom: 80px;
+            }
+        }
+    }
+}
