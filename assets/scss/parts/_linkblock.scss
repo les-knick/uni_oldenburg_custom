@@ -1,0 +1,10 @@
+.block-wisski-linkblock {
+    max-width: 1200px;
+    width: -webkit-fill-available;
+    width: -moz-fill-available;
+    width: fill-available;
+    grid-column: 1 / 15;
+    .block__content {
+        column-count: 3!important;
+    }
+}

@@ -314,6 +314,15 @@ body {
   body .social-bar {
     background-color: white; }
 
+.block-wisski-linkblock {
+  max-width: 1200px;
+  width: -webkit-fill-available;
+  width: -moz-fill-available;
+  width: fill-available;
+  grid-column: 1 / 15; }
+  .block-wisski-linkblock .block__content {
+    column-count: 3 !important; }
+
 footer.site-footer {
   background-color: #04435A !important;
   border-left: none !important;
