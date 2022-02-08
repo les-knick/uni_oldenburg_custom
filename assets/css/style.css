@@ -1,3 +1,4 @@
+@charset "UTF-8";
 h2,
 .h2 {
   color: #FAA737 !important;
@@ -187,7 +188,6 @@ h3,
       max-width: none !important; } }
 
 .layout--twocol-bricks {
-  max-width: 80%;
   margin: 0 auto;
   justify-content: space-between; }
   .layout--twocol-bricks .layout__region--middle {
@@ -346,6 +346,9 @@ body {
       display: block;
       color: black !important;
       text-decoration: none; }
+      .block-wisski-linkblock .block__content a::before {
+        content: '● ';
+        margin-right: 5px; }
       .block-wisski-linkblock .block__content a:not(:last-child) {
         margin-bottom: 5px; }
       .block-wisski-linkblock .block__content a:hover {

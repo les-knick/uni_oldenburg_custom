@@ -36,6 +36,10 @@
             display: block;
             color: black!important;
             text-decoration: none;
+            &::before {
+                content: '● ';
+                margin-right: 5px;
+            }
             &:not(:last-child) {
                 margin-bottom: 5px;
             }
