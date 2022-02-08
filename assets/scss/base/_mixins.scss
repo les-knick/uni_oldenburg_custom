@@ -16,6 +16,13 @@
     color: $color-brown;
 }
 
+@mixin font-h3 {
+    font-size: 1.5rem;
+    line-height: 2.25;
+    font-weight: 700;
+    color: black;
+}
+
 @mixin font-topline {
     font-size: 20px;
     font-weight: bold;

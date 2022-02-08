@@ -6,15 +6,20 @@
     grid-column: 1 / 15;
     position: relative;
     margin-bottom: 0;
-    h2 {
+    h2.block__title {
+        @include font-h3;
         padding-top: 80px;
+        padding-bottom: 60px;
+        color: black!important;
     }
-    &::before {
+    &::after {
         position: absolute;
         background-color: $color-brown;
         opacity: 0.15;
         width: 100vw;
         height: 100%;
+        top: 0;
+        pointer-events: none;
         content: '';
         @media only screen and (min-width: 1200px) {
             left: calc((((100vw - 100%) / 2) * -1) - 45px);
@@ -29,16 +34,30 @@
         gap: 100px;
         a {
             display: block;
-            color: black;
+            color: black!important;
             text-decoration: none;
             &:not(:last-child) {
                 margin-bottom: 5px;
+            }
+            &:hover {
+                font-weight: 700;
             }
         }
         h3 {
             font-size: 1em;
             margin-top: 30px;
             margin-bottom: 5px;
+            &:not(:first-child) {
+                margin-top: 30px;
+                padding-top: 30px;
+                border-top: 3px solid $color-brown;
+            }
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+        br {
+            display: none;
         }
     }
 }

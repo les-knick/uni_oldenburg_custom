@@ -299,20 +299,28 @@ body {
   grid-column: 1 / 15;
   position: relative;
   margin-bottom: 0; }
-  .block-wisski-linkblock h2 {
-    padding-top: 80px; }
-  .block-wisski-linkblock::before {
+  .block-wisski-linkblock h2.block__title {
+    font-size: 1.5rem;
+    line-height: 2.25;
+    font-weight: 700;
+    color: black;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    color: black !important; }
+  .block-wisski-linkblock::after {
     position: absolute;
     background-color: #FAA737;
     opacity: 0.15;
     width: 100vw;
     height: 100%;
+    top: 0;
+    pointer-events: none;
     content: ''; }
     @media only screen and (min-width: 1200px) {
-      .block-wisski-linkblock::before {
+      .block-wisski-linkblock::after {
         left: calc((((100vw - 100%) / 2) * -1) - 45px); } }
     @media only screen and (max-width: 1199px) {
-      .block-wisski-linkblock::before {
+      .block-wisski-linkblock::after {
         left: calc(((100vw - 100%) / 2) * -1); } }
   .block-wisski-linkblock .block__content {
     column-count: 3 !important;
@@ -320,14 +328,24 @@ body {
     gap: 100px; }
     .block-wisski-linkblock .block__content a {
       display: block;
-      color: black;
+      color: black !important;
       text-decoration: none; }
       .block-wisski-linkblock .block__content a:not(:last-child) {
         margin-bottom: 5px; }
+      .block-wisski-linkblock .block__content a:hover {
+        font-weight: 700; }
     .block-wisski-linkblock .block__content h3 {
       font-size: 1em;
       margin-top: 30px;
       margin-bottom: 5px; }
+      .block-wisski-linkblock .block__content h3:not(:first-child) {
+        margin-top: 30px;
+        padding-top: 30px;
+        border-top: 3px solid #FAA737; }
+      .block-wisski-linkblock .block__content h3:first-child {
+        margin-top: 0; }
+    .block-wisski-linkblock .block__content br {
+      display: none; }
 
 footer.site-footer {
   background-color: #04435A !important;
