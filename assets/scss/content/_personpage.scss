@@ -19,31 +19,4 @@
             }
         }
     }
-    .layout--person__third-helper {
-        position: relative;
-        h3 {
-            padding-top: 80px;
-        }
-        &::before {
-            position: absolute;
-            background-color: $color-brown;
-            opacity: 0.15;
-            width: 100vw;
-            height: 100%;
-            content: '';
-            @media only screen and (min-width: 1200px) {
-                left: calc((((100vw - 100%) / 2) * -1) - 45px);
-            }
-            @media only screen and (max-width: 1199px) {
-                left: calc(((100vw - 100%) / 2) * -1);
-            }
-        }
-        .layout--person__third-wrapper {
-            gap: 30px;
-            .layout--person__third-wrapper__inner {
-                flex: 0 1 33%;
-                padding-bottom: 80px;
-            }
-        }
-    }
 }

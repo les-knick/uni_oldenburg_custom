@@ -6,12 +6,6 @@ person_institiution_place:
     top:
       label: Top Content
     left_two:
-      label: Left Middle
+      label: Left
     right_two:
-      label: Right Middle
-    left_three:
-      label: Left Bottom
-    mid_three:
-      label: Center Bottom
-    right_three:
-      label: Right Bottom
+      label: Right
