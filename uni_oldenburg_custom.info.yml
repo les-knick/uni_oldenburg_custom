@@ -8,3 +8,10 @@ base theme: olivero
 # Defines libraries group in which we can add css/js.
 libraries:
   - uni_oldenburg_custom/global-styling
+regions:
+  header: 'Header'
+  primary_menu: 'Primary Menu'
+  content: 'Content'
+  footer_one: 'Footer left'
+  footer_two: 'Footer center'
+  footer_three: 'Footer right'

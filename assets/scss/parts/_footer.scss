@@ -2,7 +2,26 @@ footer.site-footer {
     background-color: $color-petrol!important;
     border-left: none!important;
     background: none;
+    color: white;
     &:after {
         box-sizing: unset;
+    }
+    .site-footer__inner {
+        padding-top: 100px;
+        padding-bottom: 200px;
+        padding-left: 0;
+        padding-right: 0;
+        .site-footer__inner__menu-wrapper {
+            flex: 0 1 33%;
+            nav {
+                margin-bottom: 0;
+            }
+            a {
+                color: white;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
     }
 }

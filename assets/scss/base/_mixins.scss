@@ -37,3 +37,19 @@
     line-height: 40px;
     color: $color-petrol;
 }
+
+@mixin font-menulink {
+    font-family: "metropolis", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 40px;
+    color: white;
+    text-decoration: none;
+}
+
+@mixin font-text {
+    font-family: "metropolis", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+}

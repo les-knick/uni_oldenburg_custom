@@ -22,11 +22,24 @@ h3,
     }
 }
 
-.topline {
+.topline,
+.h1>.field__label {
     @include font-topline;
     * {
         @include font-topline;
     }
+}
+
+.menu__link {
+    @include font-menulink;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+div,
+p {
+    @include font-text;
 }
 
 .link--arrow a,
@@ -52,8 +65,7 @@ h3,
     @include font-h2;
 }
 
-.node--type-frontpage-top {
-    .field--name-field-einstiegstext {
-        @include font-big-text;
-    }
+.big-text,
+.big-text * {
+    @include font-big-text;
 }
