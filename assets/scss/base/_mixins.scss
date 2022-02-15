@@ -53,3 +53,7 @@
     font-weight: 500;
     line-height: 25px;
 }
+
+@mixin font-link {
+    color: $color-petrol;
+}

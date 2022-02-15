@@ -9,3 +9,12 @@ person_institiution_place:
       label: Left
     right_two:
       label: Right
+solr_preview:
+  label: Solr Preview
+  category: Oldenburg Custom
+  template: templates/custom-layouts/solr_preview
+  regions:
+    left:
+      label: Left (Text)
+    right:
+      label: Right (Image)

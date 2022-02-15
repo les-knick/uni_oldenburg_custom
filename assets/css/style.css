@@ -78,6 +78,10 @@ p {
   font-weight: 500;
   line-height: 25px; }
 
+a,
+a * {
+  color: #04435A; }
+
 .link--arrow a,
 .link--arrow .a {
   text-decoration: none; }

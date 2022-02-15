@@ -42,6 +42,11 @@ p {
     @include font-text;
 }
 
+a,
+a * {
+    @include font-link;
+}
+
 .link--arrow a,
 .link--arrow .a {
     text-decoration: none;
