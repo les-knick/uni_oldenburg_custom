@@ -12,6 +12,7 @@ regions:
   header: 'Header'
   primary_menu: 'Primary Menu'
   content: 'Content'
+  link_block: 'Linkblock'
   footer_one: 'Footer left'
   footer_two: 'Footer center'
   footer_three: 'Footer right'
