@@ -1,0 +1,51 @@
+.node--type-inhalte-beitragen {
+    .node__meta {
+        display: none;
+    }
+    .node__content {
+        .layout--twocol {
+            flex-wrap: nowrap;
+            gap: 100px;
+            &>div {
+                flex: 1 0 50%;
+                max-width: calc(50% - 50px);
+            }
+            .layout__region--second {
+                .form-item {
+                    margin-bottom: 60px;
+                }
+                label {
+                    font-weight: 700;
+                }
+                .form-actions {
+                    justify-content: flex-end;
+                    &::after {
+                        @include after-link;
+                        transform: translateY(1px);
+                    }
+                }
+                input,
+                textarea {
+                    margin: 0;
+                    background-color: $color-grey;
+                    border: none;
+                    border-bottom: 3px solid $color-brown;
+                    border-radius: 0;
+                    max-width: 100%;
+                    &.form-submit {
+                        background-color: transparent;
+                        border: none;
+                        color: $color-petrol;
+                        padding-left: 0;
+                        padding-right: 0;
+                        height: auto;
+                    }
+                }
+            }
+            .layout__region--top,
+            .layout__region--bottom {
+                display: none;
+            }
+        }
+    }
+}

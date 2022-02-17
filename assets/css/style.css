@@ -293,6 +293,51 @@ footer .container {
       .layout--person .layout--person__second-wrapper .layout--person__second-wrapper__inner .field .field__item .layout {
         margin: 0; }
 
+.node--type-inhalte-beitragen .node__meta {
+  display: none; }
+
+.node--type-inhalte-beitragen .node__content .layout--twocol {
+  flex-wrap: nowrap;
+  gap: 100px; }
+  .node--type-inhalte-beitragen .node__content .layout--twocol > div {
+    flex: 1 0 50%;
+    max-width: calc(50% - 50px); }
+  .node--type-inhalte-beitragen .node__content .layout--twocol .layout__region--second .form-item {
+    margin-bottom: 60px; }
+  .node--type-inhalte-beitragen .node__content .layout--twocol .layout__region--second label {
+    font-weight: 700; }
+  .node--type-inhalte-beitragen .node__content .layout--twocol .layout__region--second .form-actions {
+    justify-content: flex-end; }
+    .node--type-inhalte-beitragen .node__content .layout--twocol .layout__region--second .form-actions::after {
+      background-image: url(../img/arrow--right--blue.png);
+      background-size: 100% 100%;
+      width: 16px;
+      height: 16px;
+      content: '';
+      display: inline-block;
+      margin-left: 10px;
+      transform: translateY(3px);
+      transform: translateY(1px); }
+  .node--type-inhalte-beitragen .node__content .layout--twocol .layout__region--second input,
+  .node--type-inhalte-beitragen .node__content .layout--twocol .layout__region--second textarea {
+    margin: 0;
+    background-color: #F0F0F0;
+    border: none;
+    border-bottom: 3px solid #FAA737;
+    border-radius: 0;
+    max-width: 100%; }
+    .node--type-inhalte-beitragen .node__content .layout--twocol .layout__region--second input.form-submit,
+    .node--type-inhalte-beitragen .node__content .layout--twocol .layout__region--second textarea.form-submit {
+      background-color: transparent;
+      border: none;
+      color: #04435A;
+      padding-left: 0;
+      padding-right: 0;
+      height: auto; }
+  .node--type-inhalte-beitragen .node__content .layout--twocol .layout__region--top,
+  .node--type-inhalte-beitragen .node__content .layout--twocol .layout__region--bottom {
+    display: none; }
+
 header .container {
   max-width: 100vw; }
 
@@ -383,7 +428,8 @@ body {
     flex: 0 1 50%; }
   .object-cards .object-card .object-card__inner--img-wrapper {
     flex: 0 1 40%;
-    position: relative; }
+    position: relative;
+    background-color: #F0F0F0; }
     .object-cards .object-card .object-card__inner--img-wrapper .field--type-image {
       width: 100%;
       height: 100%; }

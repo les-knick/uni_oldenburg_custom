@@ -22,6 +22,7 @@
         .object-card__inner--img-wrapper {
             flex: 0 1 40%;
             position: relative;
+            background-color: $color-grey;
             .field--type-image {
                 width: 100%;
                 height: 100%;

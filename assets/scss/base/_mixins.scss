@@ -57,3 +57,14 @@
 @mixin font-link {
     color: $color-petrol;
 }
+
+@mixin after-link {
+    background-image: url(../img/arrow--right--blue.png);
+    background-size: 100% 100%;
+    width: 16px;
+    height: 16px;
+    content: '';
+    display: inline-block;
+    margin-left: 10px;
+    transform: translateY(3px);
+}
