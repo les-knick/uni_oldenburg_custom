@@ -359,8 +359,6 @@ nav.menu--account {
   margin-left: 3rem; }
   nav.menu--account * {
     font-weight: 500; }
-  nav.menu--account::before {
-    content: '|'; }
 
 header.site-header--frontpage {
   height: 700px; }
