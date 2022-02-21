@@ -210,14 +210,24 @@ footer .container {
     margin: 0;
     align-self: center;
     transform: translateY(-150%); }
+    @media only screen and (max-width: 981px) {
+      .node--type-frontpage-top .layout__region.layout__region--content .field--name-field-uberschrift {
+        transform: none; } }
 
 .home--category-list--wrapper .views-row:nth-child(even) .layout--twocol,
 .view-kategorie-teaserliste .views-row:nth-child(even) .layout--twocol {
   flex-direction: row-reverse !important; }
+  @media only screen and (max-width: 576px) {
+    .home--category-list--wrapper .views-row:nth-child(even) .layout--twocol,
+    .view-kategorie-teaserliste .views-row:nth-child(even) .layout--twocol {
+      flex-direction: column !important; } }
 
 .field--name-field-home-kategorie-teaserliste .views-element-container {
   max-width: 790px;
   margin: 0 auto; }
+  @media only screen and (max-width: 981px) {
+    .field--name-field-home-kategorie-teaserliste .views-element-container {
+      max-width: 100%; } }
   .field--name-field-home-kategorie-teaserliste .views-element-container .views-row {
     border-top: 3px solid #FAA737;
     padding-top: 50px; }
@@ -225,12 +235,20 @@ footer .container {
       justify-content: space-between;
       margin-bottom: 0;
       flex-direction: row; }
+      @media only screen and (max-width: 576px) {
+        .field--name-field-home-kategorie-teaserliste .views-element-container .views-row .layout--twocol {
+          flex-direction: column; } }
       .field--name-field-home-kategorie-teaserliste .views-element-container .views-row .layout--twocol > .layout__region--first {
         flex: 0 1 25%; }
         .field--name-field-home-kategorie-teaserliste .views-element-container .views-row .layout--twocol > .layout__region--first .field--name-field-category-teaser-img {
           width: 100%;
           aspect-ratio: 1/1.5;
           height: 100%; }
+          @media only screen and (max-width: 576px) {
+            .field--name-field-home-kategorie-teaserliste .views-element-container .views-row .layout--twocol > .layout__region--first .field--name-field-category-teaser-img {
+              width: 50%;
+              max-height: 240px;
+              margin: 0 auto; } }
           .field--name-field-home-kategorie-teaserliste .views-element-container .views-row .layout--twocol > .layout__region--first .field--name-field-category-teaser-img img {
             width: 100%;
             height: 100%;
@@ -556,8 +574,20 @@ footer.site-footer {
     padding-bottom: 200px;
     padding-left: 0;
     padding-right: 0; }
+    @media only screen and (max-width: 1236px) {
+      footer.site-footer .site-footer__inner {
+        padding-left: 18px;
+        padding-right: 18px; } }
+    @media only screen and (max-width: 576px) {
+      footer.site-footer .site-footer__inner {
+        flex-wrap: wrap;
+        padding-bottom: 50px; } }
     footer.site-footer .site-footer__inner .site-footer__inner__menu-wrapper {
       flex: 0 1 33%; }
+      @media only screen and (max-width: 576px) {
+        footer.site-footer .site-footer__inner .site-footer__inner__menu-wrapper {
+          flex: 1 0 50%;
+          margin-bottom: 80px; } }
       footer.site-footer .site-footer__inner .site-footer__inner__menu-wrapper nav {
         margin-bottom: 0; }
       footer.site-footer .site-footer__inner .site-footer__inner__menu-wrapper a {

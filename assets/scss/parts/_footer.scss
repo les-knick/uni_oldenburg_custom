@@ -11,8 +11,20 @@ footer.site-footer {
         padding-bottom: 200px;
         padding-left: 0;
         padding-right: 0;
+        @media only screen and (max-width: $breakpoint-l) {
+            padding-left: 18px;
+            padding-right: 18px;
+        }
+        @media only screen and (max-width: $breakpoint-s) {
+            flex-wrap: wrap;
+            padding-bottom: 50px;
+        }
         .site-footer__inner__menu-wrapper {
             flex: 0 1 33%;
+            @media only screen and (max-width: $breakpoint-s) {
+                flex: 1 0 50%;
+                margin-bottom: 80px;
+            }
             nav {
                 margin-bottom: 0;
             }

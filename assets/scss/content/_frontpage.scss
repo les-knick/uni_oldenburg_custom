@@ -41,6 +41,9 @@
             margin: 0;
             align-self: center;
             transform: translateY(-150%);
+            @media only screen and (max-width: $breakpoint-m) {
+                transform: none;
+            }
         }
     }
 }
@@ -48,12 +51,18 @@
 .home--category-list--wrapper .views-row:nth-child(even) .layout--twocol,
 .view-kategorie-teaserliste .views-row:nth-child(even) .layout--twocol {
     flex-direction: row-reverse!important;
+    @media only screen and (max-width: $breakpoint-s) {
+        flex-direction: column!important;
+    }
 }
 
 .field--name-field-home-kategorie-teaserliste {
     .views-element-container {
         max-width: 790px;
         margin: 0 auto;
+        @media only screen and (max-width: $breakpoint-m) {
+            max-width: 100%;
+        }
         .views-row {
             border-top: 3px solid $color-brown;
             padding-top: 50px;
@@ -61,12 +70,20 @@
                 justify-content: space-between;
                 margin-bottom: 0;
                 flex-direction: row;
+                @media only screen and (max-width: $breakpoint-s) {
+                    flex-direction: column;
+                }
                 >.layout__region--first {
                     flex: 0 1 25%;
                     .field--name-field-category-teaser-img {
                         width: 100%;
                         aspect-ratio: 1/1.5;
                         height: 100%;
+                        @media only screen and (max-width: $breakpoint-s) {
+                            width: 50%;
+                            max-height: 240px;
+                            margin: 0 auto;
+                        }
                         img {
                             width: 100%;
                             height: 100%;
