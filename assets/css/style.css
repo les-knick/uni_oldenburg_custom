@@ -211,7 +211,8 @@ footer .container {
     align-self: center;
     transform: translateY(-150%); }
 
-.home--category-list--wrapper .views-row:nth-child(even) .layout--twocol {
+.home--category-list--wrapper .views-row:nth-child(even) .layout--twocol,
+.view-kategorie-teaserliste .views-row:nth-child(even) .layout--twocol {
   flex-direction: row-reverse !important; }
 
 .field--name-field-home-kategorie-teaserliste .views-element-container {

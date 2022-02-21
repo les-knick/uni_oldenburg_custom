@@ -45,7 +45,8 @@
     }
 }
 
-.home--category-list--wrapper .views-row:nth-child(even) .layout--twocol {
+.home--category-list--wrapper .views-row:nth-child(even) .layout--twocol,
+.view-kategorie-teaserliste .views-row:nth-child(even) .layout--twocol {
     flex-direction: row-reverse!important;
 }
 
