@@ -355,6 +355,13 @@ header #block-uni-oldenburg-custom-branding {
 header .primary-nav__menu-link-inner:after {
   border-color: #04435A; }
 
+nav.menu--account {
+  margin-left: 3rem; }
+  nav.menu--account * {
+    font-weight: 500; }
+  nav.menu--account::before {
+    content: '|'; }
+
 header.site-header--frontpage {
   height: 700px; }
   header.site-header--frontpage .primary-nav__menu-link-inner:after {

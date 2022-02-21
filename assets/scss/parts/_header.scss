@@ -17,6 +17,16 @@ header {
     }
 }
 
+nav.menu--account {
+    margin-left: 3rem;
+    * {
+        font-weight: 500;
+    }
+    &::before {
+        content: '|';
+    }
+}
+
 header.site-header--frontpage {
     height: 700px;
     .primary-nav__menu-link-inner:after {
