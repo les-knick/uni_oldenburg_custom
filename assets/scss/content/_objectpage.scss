@@ -8,6 +8,23 @@
         height: 100px;
     }
     .layout__region--first-above {
+        @media only screen and (max-width: $breakpoint-s) {
+            .field--type-image {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: no-wrap;
+                width: 100%;
+                overflow: scroll;
+                .field-item {
+                    display: inline-block;
+                    height: 340px;
+                    img {
+                        height: 100%;
+                        width: auto;
+                    }
+                }
+            }
+        }
         img {
             width: 100%
         }

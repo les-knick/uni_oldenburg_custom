@@ -322,6 +322,19 @@ textarea {
       flex-direction: column; } }
   .layout--twocol-bricks .layout__region--middle {
     height: 100px; }
+  @media only screen and (max-width: 576px) {
+    .layout--twocol-bricks .layout__region--first-above .field--type-image {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: no-wrap;
+      width: 100%;
+      overflow: scroll; }
+      .layout--twocol-bricks .layout__region--first-above .field--type-image .field-item {
+        display: inline-block;
+        height: 340px; }
+        .layout--twocol-bricks .layout__region--first-above .field--type-image .field-item img {
+          height: 100%;
+          width: auto; } }
   .layout--twocol-bricks .layout__region--first-above img {
     width: 100%; }
   .layout--twocol-bricks .layout__region--second-above {
