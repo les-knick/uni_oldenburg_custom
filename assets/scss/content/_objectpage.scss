@@ -1,6 +1,9 @@
 .layout--twocol-bricks {
     margin: 0 auto;
     justify-content: space-between;
+    @media only screen and (max-width: $breakpoint-s) {
+        flex-direction: column;
+    }
     .layout__region--middle {
         height: 100px;
     }

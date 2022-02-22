@@ -77,14 +77,25 @@ nav.breadcrumb {
     display: none;
 }
 
-.mobile-buttons {
-    margin-top: 40px!important;
+.site-header--frontpage .mobile-buttons {
     button.mobile-nav-button {
         color: white;
         .mobile-nav-button__icon:after,
         .mobile-nav-button__icon:before,
         .mobile-nav-button__icon {
             background-color: white!important;
+        }
+    }
+}
+
+.mobile-buttons {
+    margin-top: 40px!important;
+    button.mobile-nav-button {
+        color: $color-petrol;
+        .mobile-nav-button__icon:after,
+        .mobile-nav-button__icon:before,
+        .mobile-nav-button__icon {
+            background-color: $color-petrol!important;
         }
     }
 }

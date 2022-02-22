@@ -32,6 +32,12 @@
         column-count: 3!important;
         padding-bottom: 80px;
         gap: 100px;
+        @media only screen and (max-width: $breakpoint-m) {
+            column-count: 2!important;
+        }
+        @media only screen and (max-width: $breakpoint-s) {
+            column-count: 1!important;
+        }
         a {
             display: block;
             color: black!important;

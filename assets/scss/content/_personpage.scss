@@ -5,6 +5,9 @@
     .layout--person__second-wrapper {
         gap: 30px;
         margin-bottom: 90px;
+        @media only screen and (max-width: $breakpoint-s) {
+            flex-direction: column;
+        }
         .layout--person__second-wrapper__inner {
             flex: 0 1 50%;
             .field {
