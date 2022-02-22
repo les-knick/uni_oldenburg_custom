@@ -328,7 +328,8 @@ textarea {
       flex-direction: row;
       flex-wrap: no-wrap;
       width: 100%;
-      overflow: scroll; }
+      overflow: scroll;
+      margin-bottom: 50px; }
       .layout--twocol-bricks .layout__region--first-above .field--type-image .field-item {
         display: inline-block;
         height: 340px; }
