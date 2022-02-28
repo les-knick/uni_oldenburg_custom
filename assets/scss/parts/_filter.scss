@@ -9,6 +9,7 @@
             align-items: center;
             margin-bottom: 100px;
             position: relative;
+            transform: translateY(-180px);
             &::before {
                 content: '';
                 width: 100vw;

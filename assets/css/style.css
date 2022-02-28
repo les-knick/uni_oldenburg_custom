@@ -568,7 +568,8 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 100px;
-  position: relative; }
+  position: relative;
+  transform: translateY(-180px); }
   .object-cards .view-filters .views-exposed-form.form--inline::before {
     content: '';
     width: 100vw;
