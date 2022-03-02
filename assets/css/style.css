@@ -495,6 +495,10 @@ nav.menu--account {
     nav.menu--account {
       margin-left: 0; } }
 
+@media only screen and (max-width: 1236px) {
+  header.site-header--frontpage .site-header__fixable.is-fixed #site-header__inner {
+    background-color: transparent; } }
+
 header.site-header--frontpage {
   height: 700px; }
   header.site-header--frontpage .primary-nav__menu-link-inner:after {

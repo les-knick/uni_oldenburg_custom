@@ -27,6 +27,12 @@ nav.menu--account {
     }
 }
 
+header.site-header--frontpage .site-header__fixable.is-fixed #site-header__inner {
+    @media only screen and (max-width: $breakpoint-l) {
+        background-color: transparent;
+    }
+}
+
 header.site-header--frontpage {
     height: 700px;
     .primary-nav__menu-link-inner:after {
