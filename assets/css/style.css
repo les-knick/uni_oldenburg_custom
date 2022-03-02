@@ -195,7 +195,7 @@ a * {
   grid-column: 1/15 !important; }
 
 .main-content__container {
-  max-width: 1200px;
+  max-width: 1200px !important;
   margin: 0 auto; }
 
 footer .container {
