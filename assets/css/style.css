@@ -491,11 +491,11 @@ nav.menu--account {
   margin-left: 2.25rem; }
   nav.menu--account * {
     font-weight: 500; }
-  @media only screen and (max-width: 1236px) {
+  @media only screen and (max-width: 1200px) {
     nav.menu--account {
       margin-left: 0; } }
 
-@media only screen and (max-width: 1236px) {
+@media only screen and (max-width: 1200px) {
   header.site-header--frontpage .site-header__fixable.is-fixed #site-header__inner {
     background-color: transparent; } }
 
@@ -550,16 +550,16 @@ header.site-header--frontpage {
         header.site-header--frontpage .site-header--frontpage__header-content .site-header--frontpage__header-content__content-wrapper .site-header--frontpage__header-content__content-wrapper__inner .site-header--frontpage__header-content__content-wrapper__inner__form input,
         header.site-header--frontpage .site-header--frontpage__header-content .site-header--frontpage__header-content__content-wrapper .site-header--frontpage__header-content__content-wrapper__inner .site-header--frontpage__header-content__content-wrapper__inner__form button {
           display: block; }
-  @media only screen and (max-width: 1236px) {
+  @media only screen and (max-width: 1200px) {
     header.site-header--frontpage .site-header__inner {
       background-color: transparent; } }
-  @media only screen and (min-width: 1236px) {
+  @media only screen and (min-width: 1200px) {
     header.site-header--frontpage .site-header__fixable #site-header__inner,
     header.site-header--frontpage .site-header__fixable .site-header__initial,
     header.site-header--frontpage .site-header__fixable .sticky-header-toggle,
     header.site-header--frontpage .site-header__fixable #header-nav {
       background-color: transparent; } }
-  @media only screen and (min-width: 1236px) {
+  @media only screen and (min-width: 1200px) {
     header.site-header--frontpage .site-header__fixable .primary-nav__menu-link-inner,
     header.site-header--frontpage .site-header__fixable .secondary-nav__menu-link,
     header.site-header--frontpage .site-header__fixable .block-search-wide__button svg {
@@ -797,7 +797,7 @@ footer.site-footer {
     padding-bottom: 200px;
     padding-left: 0;
     padding-right: 0; }
-    @media only screen and (max-width: 1236px) {
+    @media only screen and (max-width: 1200px) {
       footer.site-footer .site-footer__inner {
         padding-left: 18px;
         padding-right: 18px; } }

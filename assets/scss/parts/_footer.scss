@@ -11,7 +11,7 @@ footer.site-footer {
         padding-bottom: 200px;
         padding-left: 0;
         padding-right: 0;
-        @media only screen and (max-width: $breakpoint-l) {
+        @media only screen and (max-width: $breakpoint-l--with-padding) {
             padding-left: 18px;
             padding-right: 18px;
         }
