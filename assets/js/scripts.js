@@ -28,8 +28,8 @@ function changeHomeLogoOnScroll() {
 
 function noLinksInLinkblock() {
     jQuery(document).ready(function($) {
-        var link_block = $('.region--link-block');
-        var link_block__content = $('.region--link-block .block__content a');
+        var link_block = $('#block-uni-oldenburg-custom-wisskilinkblock');
+        var link_block__content = $('#block-uni-oldenburg-custom-wisskilinkblock .block__content a');
         if (link_block__content[0]) {
             //content vorhanden
         } else {
