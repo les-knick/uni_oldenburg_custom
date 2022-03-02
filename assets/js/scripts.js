@@ -43,7 +43,7 @@ function storeSearchString() {
     jQuery(document).ready(function($) {
         var storedSearchString = document.getElementById("searchString");
         localStorage.setItem("searchString", storedSearchString.value);
-        window.location.href = "/volltextsuche";
+        window.location.href = "/objekt_recherche";
     });
 }
 
@@ -58,7 +58,7 @@ function getSearchString() {
 
             localStorage.setItem("searchString", "alreadySearchedThis");
 
-            var submitBtn = document.getElementById('views-exposed-form-duplicate-of-volltextsuche-page-1');
+            var submitBtn = document.getElementById('views-exposed-form-objektrecherche-page-1');
             submitBtn.submit();
         } else if (!searchedString) {
             searchInputField.value = "";
