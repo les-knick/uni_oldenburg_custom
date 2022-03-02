@@ -9,7 +9,7 @@
             align-items: center;
             margin-bottom: 100px;
             position: relative;
-            transform: translateY(-180px);
+            transform: translateY(-40px);
             &::before {
                 content: '';
                 width: 100vw;
@@ -34,10 +34,24 @@
                 border-radius: 0;
             }
             input.button {
-                background-color: transparent;
-                color: $color-petrol;
+                padding: 20px;
+                background-color: $color-petrol;
+                color: white!important;
+                box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.16);
                 border: none;
-                margin: 0;
+                border-radius: 4px;
+                display: block;
+                margin-top: 50px;
+                width: fit-content;
+                width: -moz-fit-content;
+                width: -ms-fit-content;
+                width: -webkit-fit-content;
+                &::after {
+                    content: '›';
+                    padding-left: 20px;
+                    padding-top: 2px;
+                    font-size: 2rem;
+                }
             }
         }
     }

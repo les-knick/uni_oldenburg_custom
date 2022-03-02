@@ -11,6 +11,7 @@ libraries:
 regions:
   header: 'Header'
   primary_menu: 'Primary Menu'
+  sidebar_filter: 'Sidebar (Filter)'
   content: 'Content'
   link_block: 'Linkblock'
   footer_one: 'Footer left'

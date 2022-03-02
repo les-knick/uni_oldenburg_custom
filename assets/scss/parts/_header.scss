@@ -22,6 +22,9 @@ nav.menu--account {
     * {
         font-weight: 500;
     }
+    @media only screen and (max-width: $breakpoint-l) {
+        margin-left: 0;
+    }
 }
 
 header.site-header--frontpage {
@@ -30,7 +33,8 @@ header.site-header--frontpage {
         border-color: white;
     }
     .site-header--frontpage__header-img,
-    .site-header--frontpage__overlay--orange {
+    .site-header--frontpage__overlay--orange,
+    .site-header--frontpage__header-content {
         position: absolute;
         left: 0;
         right: 0;
@@ -42,17 +46,70 @@ header.site-header--frontpage {
         background-color: $color-brown;
         mix-blend-mode: multiply;
     }
+    .site-header--frontpage__header-content {
+        justify-content: center;
+        align-items: center;
+        .site-header--frontpage__header-content__content-wrapper {
+            gap: 100px;
+            align-items: center;
+            @media only screen and (max-width: $breakpoint-m) {
+                flex-direction: column;
+                gap: 30px;
+            }
+            .site-header--frontpage__header-content__content-wrapper__inner {
+                flex: 1 1 50%;
+                @media only screen and (max-width: $breakpoint-m) {
+                    width: 70%;
+                }
+                @media only screen and (max-width: $breakpoint-s) {
+                    width: 100%;
+                }
+                h1 {
+                    max-width: 740px;
+                    @media only screen and (max-width: $breakpoint-m) {
+                        margin-top: 50px;
+                        text-align: center;
+                    }
+                }
+                .site-header--frontpage__header-content__content-wrapper__inner__form {
+                    input {
+                        width: 100%;
+                        margin-top: 30px;
+                        border: none;
+                        border-radius: 0;
+                    }
+                    button {
+                        font-size: 20px;
+                        margin: 30px auto;
+                    }
+                    input,
+                    button {
+                        display: block
+                    }
+                }
+            }
+        }
+    }
+    .site-header__inner {
+        @media only screen and (max-width: $breakpoint-l) {
+            background-color: transparent;
+        }
+    }
     .site-header__fixable {
         #site-header__inner,
         .site-header__initial,
         .sticky-header-toggle,
         #header-nav {
-            background-color: transparent;
+            @media only screen and (min-width: $breakpoint-l) {
+                background-color: transparent;
+            }
         }
         .primary-nav__menu-link-inner,
         .secondary-nav__menu-link,
         .block-search-wide__button svg {
-            color: white;
+            @media only screen and (min-width: $breakpoint-l) {
+                color: white;
+            }
         }
     }
     .site-header__fixable.is-fixed {
@@ -77,8 +134,31 @@ nav.breadcrumb {
     display: none;
 }
 
+.mobile-buttons {
+    margin-top: 40px!important;
+    button.mobile-nav-button[aria-expanded="false"] {
+        color: $color-petrol;
+        .mobile-nav-button__icon:after,
+        .mobile-nav-button__icon:before,
+        .mobile-nav-button__icon {
+            background-color: $color-petrol!important;
+        }
+    }
+    button.mobile-nav-button[aria-expanded="true"] {
+        color: $color-petrol;
+        .mobile-nav-button__icon:after,
+        .mobile-nav-button__icon:before {
+            background-color: $color-petrol!important;
+        }
+        .mobile-nav-button__icon {
+            background-color: transparent!important;
+        }
+    }
+}
+
 .site-header--frontpage .mobile-buttons {
-    button.mobile-nav-button {
+    margin-top: 40px!important;
+    button.mobile-nav-button[aria-expanded="false"] {
         color: white;
         .mobile-nav-button__icon:after,
         .mobile-nav-button__icon:before,
@@ -86,16 +166,14 @@ nav.breadcrumb {
             background-color: white!important;
         }
     }
-}
-
-.mobile-buttons {
-    margin-top: 40px!important;
-    button.mobile-nav-button {
+    button.mobile-nav-button[aria-expanded="true"] {
         color: $color-petrol;
         .mobile-nav-button__icon:after,
-        .mobile-nav-button__icon:before,
-        .mobile-nav-button__icon {
+        .mobile-nav-button__icon:before {
             background-color: $color-petrol!important;
+        }
+        .mobile-nav-button__icon {
+            background-color: transparent!important;
         }
     }
 }

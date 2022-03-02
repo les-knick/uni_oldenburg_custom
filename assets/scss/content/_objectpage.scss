@@ -8,6 +8,7 @@
         height: 100px;
     }
     .layout__region--first-above {
+        align-self: center;
         @media only screen and (max-width: $breakpoint-s) {
             .field--type-image {
                 display: flex;
@@ -46,6 +47,16 @@
 .layout--twocol-bricks>.layout__region--first-below,
 .layout--twocol-bricks>.layout__region--second-below {
     flex: 0 1 45%;
+    max-width: 100%;
+    .slick-next {
+        right: 20px;
+    }
+    .slick-wrapper--tn-right .slick--main {
+        padding-right: 20px;
+    }
+    @media only screen and (min-width: $breakpoint-s) {
+        max-width: 45%;
+    }
 }
 
 .layout--twocol-bricks>.layout__region--first-below,
@@ -61,3 +72,31 @@
         }
     }
 }
+
+.slick--thumbnail.slick--skin--asnavfor .slick__slide.slick-current::before {
+    display: none;
+}
+
+.slick--thumbnail.slick--skin--asnavfor .slick__slide.slick-current {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    transform: none;
+}
+
+.slick--thumbnail.slick--skin--asnavfor .slick__slide img {
+    height: 100px;
+    object-fit: cover;
+}
+
+.slick--thumbnail.slick--skin--asnavfor {
+    @media only screen and (max-width: $breakpoint-ml) {
+        display: none
+    }
+}
+
+
+/* 
+.slick--field .slick__slider {
+    display: grid;
+    grid-template-columns: [first] 70% [mid] 30% [end];
+    grid-template-rows: repeat(5, 1fr);
+} */
