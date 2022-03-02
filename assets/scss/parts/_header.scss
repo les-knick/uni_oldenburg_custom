@@ -47,6 +47,9 @@ header.site-header--frontpage {
         top: 0;
         width: 100vw;
         height: 700px;
+        img {
+            object-fit: cover;
+        }
     }
     .site-header--frontpage__overlay--orange {
         background-color: $color-brown;

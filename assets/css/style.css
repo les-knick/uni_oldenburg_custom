@@ -512,6 +512,10 @@ header.site-header--frontpage {
     top: 0;
     width: 100vw;
     height: 700px; }
+    header.site-header--frontpage .site-header--frontpage__header-img img,
+    header.site-header--frontpage .site-header--frontpage__overlay--orange img,
+    header.site-header--frontpage .site-header--frontpage__header-content img {
+      object-fit: cover; }
   header.site-header--frontpage .site-header--frontpage__overlay--orange {
     background-color: #FAA737;
     mix-blend-mode: multiply; }
@@ -797,7 +801,7 @@ footer.site-footer {
     padding-bottom: 200px;
     padding-left: 0;
     padding-right: 0; }
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: 1236px) {
       footer.site-footer .site-footer__inner {
         padding-left: 18px;
         padding-right: 18px; } }
