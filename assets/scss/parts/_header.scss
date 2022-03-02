@@ -38,6 +38,9 @@ header.site-header--frontpage {
     .primary-nav__menu-link-inner:after {
         border-color: white;
     }
+    .site-header--frontpage__header-img {
+        object-fit: cover;
+    }
     .site-header--frontpage__header-img,
     .site-header--frontpage__overlay--orange,
     .site-header--frontpage__header-content {
@@ -47,9 +50,6 @@ header.site-header--frontpage {
         top: 0;
         width: 100vw;
         height: 700px;
-        img {
-            object-fit: cover;
-        }
     }
     .site-header--frontpage__overlay--orange {
         background-color: $color-brown;
