@@ -560,7 +560,7 @@ header.site-header--frontpage {
     header.site-header--frontpage .site-header__fixable .site-header__initial,
     header.site-header--frontpage .site-header__fixable .sticky-header-toggle,
     header.site-header--frontpage .site-header__fixable #header-nav {
-      background-color: transparent; } }
+      background-color: transparent !important; } }
   @media only screen and (min-width: 1200px) {
     header.site-header--frontpage .site-header__fixable .primary-nav__menu-link-inner,
     header.site-header--frontpage .site-header__fixable .secondary-nav__menu-link,
