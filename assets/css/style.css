@@ -205,8 +205,8 @@ footer .container {
 [dir="ltr"] .wide-image {
   margin-left: 0 !important; }
 
-.region--content {
-  margin-bottom: 0 !important; }
+main .region--content {
+  margin-bottom: 200px; }
 
 #block-uni-oldenburg-custom-content {
   margin-bottom: 0 !important; }
