@@ -497,7 +497,7 @@ nav.menu--account {
 
 @media only screen and (max-width: 1200px) {
   header.site-header--frontpage .site-header__fixable.is-fixed #site-header__inner {
-    background-color: transparent; } }
+    background-color: transparent !important; } }
 
 header.site-header--frontpage {
   height: 700px; }
