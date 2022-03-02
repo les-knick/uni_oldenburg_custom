@@ -110,7 +110,7 @@ header.site-header--frontpage {
         .sticky-header-toggle,
         #header-nav {
             @media only screen and (min-width: $breakpoint-l) {
-                background-color: transparent!important;
+                background-color: transparent;
             }
         }
         .primary-nav__menu-link-inner,

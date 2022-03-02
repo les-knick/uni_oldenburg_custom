@@ -53,13 +53,13 @@ Items for the breadcrumb region. * - page.social: Items for the social region. *
                     <a id="main-content" tabindex="-1"></a>
                     {{ page.hero }}
                     <div class="main-content__container container">
-                        {{ page.highlighted }} {{ page.breadcrumb }} {% if page.sidebar_filters %}
+                        {{ page.highlighted }} {{ page.breadcrumb }} {% if page.sidebar_filter %}
                         <div class="">
                             <main role="main" class="v-section--content container--content">
                                 {{ page.content_above }} {{ page.content }} {{ page.link_block }}
                             </main>
                             <div class="v-section--sidebar container--sidebar">
-                                {{ page.sidebar_filters }}
+                                {{ page.sidebar_filter }}
                             </div>
                         </div>
                         {% else %}
