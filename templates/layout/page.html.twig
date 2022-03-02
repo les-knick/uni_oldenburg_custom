@@ -53,17 +53,18 @@ Items for the breadcrumb region. * - page.social: Items for the social region. *
                     <a id="main-content" tabindex="-1"></a>
                     {{ page.hero }}
                     <div class="main-content__container container">
-                        {{ page.highlighted }} {{ page.breadcrumb }} {% if page.sidebar %}
-                        <div class="sidebar-grid grid-full">
-                            <main role="main" class="site-main ie11-autorow">
-                                {{ page.content_above }} {{ page.content }}
+                        {{ page.highlighted }} {{ page.breadcrumb }} {% if page.sidebar_filters %}
+                        <div class="">
+                            <main role="main" class="v-section--content container--content">
+                                {{ page.content_above }} {{ page.content }} {{ page.link_block }}
                             </main>
-
-                            {{ page.sidebar }}
+                            <div class="v-section--sidebar container--sidebar">
+                                {{ page.sidebar_filters }}
+                            </div>
                         </div>
                         {% else %}
                         <main role="main">
-                            {{ page.content_above }} {{ page.content }} {{ kint() }} {% if page.link_block is empty %} {% else %} {{ page.link_block }} {% endif %}
+                            {{ page.content_above }} {{ page.content }} {{ page.link_block }}
 
 
                         </main>

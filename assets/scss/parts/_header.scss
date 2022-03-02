@@ -101,7 +101,7 @@ header.site-header--frontpage {
     }
     .site-header__inner {
         @media only screen and (max-width: $breakpoint-l) {
-            background-color: transparent;
+            background-color: transparent!important;
         }
     }
     .site-header__fixable {
