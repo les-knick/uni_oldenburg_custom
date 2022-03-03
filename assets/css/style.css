@@ -808,7 +808,6 @@ ul.facet-active {
     div.v-section-wrapper .v-section--sidebar {
       position: absolute;
       background-color: white;
-      z-index: 999999999999999;
       padding-bottom: 0px;
       width: 100vw;
       left: -18px;
