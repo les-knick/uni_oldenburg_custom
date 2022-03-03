@@ -108,3 +108,40 @@ a * {
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.16);
     }
 }
+
+.v-section--sidebar__toggle {
+    display: none;
+    @include font-big-text;
+    @include font-link;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 40px;
+    background: none;
+    border: none;
+    box-shadow: none;
+    &:hover {
+        font-weight: bold;
+    }
+    &::after {
+        content: '';
+        height: 20px;
+        width: 18px;
+        display: inline-block;
+        background-image: url(/themes/custom/uni_oldenburg_custom/assets/img/arrow--up.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        margin-left: 20px;
+        transform: translateY(2px);
+    }
+    &.toggled {
+        margin-top: -20px;
+        &::after {
+            background-image: url(/themes/custom/uni_oldenburg_custom/assets/img/arrow--down.jpg);
+        }
+    }
+    @media only screen and (max-width: $breakpoint-s) {
+        display: block;
+    }
+}

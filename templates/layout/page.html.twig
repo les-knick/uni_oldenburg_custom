@@ -54,12 +54,13 @@ Items for the breadcrumb region. * - page.social: Items for the social region. *
                     {{ page.hero }}
                     <div class="main-content__container container">
                         {{ page.highlighted }} {{ page.breadcrumb }} {% if page.sidebar_filter %}
-                        <div class="">
+                        <div class="v-section-wrapper flex">
                             <main role="main" class="v-section--content container--content">
                                 {{ page.content_above }} {{ page.content }} {{ page.link_block }}
                             </main>
                             <div class="v-section--sidebar container--sidebar">
                                 {{ page.sidebar_filter }}
+                                <button class="v-section--sidebar__toggle btn" id="v-section--sidebar__toggle" onclick="toggleFacets()">Filter</button>
                             </div>
                         </div>
                         {% else %}

@@ -1,5 +1,9 @@
 * {
     transition: 0.1s ease;
+    hyphens: auto;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
 }
 
 [type="color"],

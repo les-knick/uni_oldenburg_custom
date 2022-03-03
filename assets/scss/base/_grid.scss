@@ -36,3 +36,19 @@ main .region--content {
 #block-uni-oldenburg-custom-content {
     margin-bottom: 0!important;
 }
+
+.v-section-wrapper {
+    gap: 100px;
+    .v-section--content {
+        flex: 0 1 70%;
+    }
+    .v-section--sidebar {
+        flex: 0 1 30%;
+        height: 200px;
+        width: 400px;
+        margin-top: 433px;
+        @media only screen and (max-width: $breakpoint-s) {
+            margin-top: 333px;
+        }
+    }
+}

@@ -65,3 +65,22 @@ function getSearchString() {
         }
     });
 }
+
+function toggleFacets() {
+    jQuery(document).ready(function($) {
+        var toggleBtn = $('#v-section--sidebar__toggle');
+        var RegionSidebar = $('.v-section--sidebar');
+
+        if (toggleBtn.hasClass('toggled')) {
+            //dropdown open
+            toggleBtn.removeClass('toggled');
+            RegionSidebar.addClass('v-section--sidebar__filter--open');
+            RegionSidebar.removeClass('v-section--sidebar__filter--closed');
+        } else {
+            toggleBtn.addClass('toggled');
+            RegionSidebar.addClass('v-section--sidebar__filter--closed');
+            RegionSidebar.removeClass('v-section--sidebar__filter--open');
+        }
+
+    });
+}

@@ -181,6 +181,41 @@ a * {
   text-decoration: none;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.16); }
 
+.v-section--sidebar__toggle {
+  display: none;
+  font-family: "metropolis", sans-serif;
+  font-size: 23px;
+  line-height: 40px;
+  color: #04435A;
+  color: #04435A;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 40px;
+  background: none;
+  border: none;
+  box-shadow: none; }
+  .v-section--sidebar__toggle:hover {
+    font-weight: bold; }
+  .v-section--sidebar__toggle::after {
+    content: '';
+    height: 20px;
+    width: 18px;
+    display: inline-block;
+    background-image: url(/themes/custom/uni_oldenburg_custom/assets/img/arrow--up.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin-left: 20px;
+    transform: translateY(2px); }
+  .v-section--sidebar__toggle.toggled {
+    margin-top: -20px; }
+    .v-section--sidebar__toggle.toggled::after {
+      background-image: url(/themes/custom/uni_oldenburg_custom/assets/img/arrow--down.jpg); }
+  @media only screen and (max-width: 576px) {
+    .v-section--sidebar__toggle {
+      display: block; } }
+
 .page-wrapper {
   max-width: 100%; }
 
@@ -211,8 +246,25 @@ main .region--content {
 #block-uni-oldenburg-custom-content {
   margin-bottom: 0 !important; }
 
+.v-section-wrapper {
+  gap: 100px; }
+  .v-section-wrapper .v-section--content {
+    flex: 0 1 70%; }
+  .v-section-wrapper .v-section--sidebar {
+    flex: 0 1 30%;
+    height: 200px;
+    width: 400px;
+    margin-top: 433px; }
+    @media only screen and (max-width: 576px) {
+      .v-section-wrapper .v-section--sidebar {
+        margin-top: 333px; } }
+
 * {
-  transition: 0.1s ease; }
+  transition: 0.1s ease;
+  hyphens: auto;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto; }
 
 [type="color"],
 [type="date"],
@@ -630,14 +682,14 @@ body {
 
 .object-cards .views-view-grid {
   justify-content: space-between; }
-  @media only screen and (max-width: 576px) {
+  @media only screen and (max-width: 981px) {
     .object-cards .views-view-grid {
       flex-direction: column; } }
   .object-cards .views-view-grid .views-view-grid__item {
     margin-right: 0;
     margin-bottom: 100px;
     flex: 0 1 45%; }
-    @media only screen and (max-width: 576px) {
+    @media only screen and (max-width: 981px) {
       .object-cards .views-view-grid .views-view-grid__item {
         margin-bottom: 50px; } }
 
@@ -674,8 +726,10 @@ body {
   display: flex;
   flex-direction: column;
   padding: 50px;
+  padding-left: 0;
+  padding-right: 0;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 100px;
   position: relative;
   transform: translateY(-40px); }
@@ -690,8 +744,11 @@ body {
     top: -50px; }
     @media only screen and (min-width: 1200px) {
       .object-cards .view-filters .views-exposed-form.form--inline::before {
-        left: calc((((100vw - 100%) / 2) * -1) - 45px); } }
+        left: calc((((100vw - (149.8% + 50px)) / 2) * -1) - 45px); } }
     @media only screen and (max-width: 1199px) {
+      .object-cards .view-filters .views-exposed-form.form--inline::before {
+        left: calc(((100vw - (149.8% + 50px)) / 2) * -1); } }
+    @media only screen and (max-width: 576px) {
       .object-cards .view-filters .views-exposed-form.form--inline::before {
         left: calc(((100vw - 100%) / 2) * -1); } }
   .object-cards .view-filters .views-exposed-form.form--inline * {
@@ -707,7 +764,7 @@ body {
     border: none;
     border-radius: 4px;
     display: block;
-    margin-top: 50px;
+    margin-top: 20px;
     width: fit-content;
     width: -moz-fit-content;
     width: -ms-fit-content;
@@ -717,6 +774,60 @@ body {
       padding-left: 20px;
       padding-top: 2px;
       font-size: 2rem; }
+
+ul.facet-inactive,
+ul.facet-active {
+  list-style: none !important;
+  margin-left: 0 !important; }
+  ul.facet-inactive li,
+  ul.facet-active li {
+    margin-bottom: 10px; }
+    ul.facet-inactive li input[type="checkbox"]:checked,
+    ul.facet-active li input[type="checkbox"]:checked {
+      background-image: url(/themes/custom/uni_oldenburg_custom/assets/img/checkbox-checked.jpg);
+      border: none;
+      background-size: 100%; }
+
+.container--sidebar h2.block__title {
+  font-size: 20px;
+  color: black !important;
+  line-height: 1.2;
+  margin-top: 50px; }
+
+.container--sidebar .block-facets {
+  border-bottom: 3px solid #FAA737;
+  padding-bottom: 30px; }
+  .container--sidebar .block-facets .facets-soft-limit-link {
+    margin-top: 20px;
+    display: block; }
+
+@media only screen and (max-width: 576px) {
+  div.v-section-wrapper {
+    display: block;
+    position: relative; }
+    div.v-section-wrapper .v-section--sidebar {
+      position: absolute;
+      background-color: white;
+      z-index: 999999999999999;
+      padding-bottom: 0px;
+      width: 100vw;
+      left: -18px;
+      padding-left: 18px;
+      padding-right: 18px;
+      padding-bottom: 10px;
+      top: 0;
+      height: -webkit-fit-content;
+      height: fit-content;
+      height: -ms-fit-content;
+      height: -moz-fit-content; }
+      div.v-section-wrapper .v-section--sidebar.v-section--sidebar__filter--open {
+        box-shadow: 0 6px 6px rgba(0, 0, 0, 0.08); }
+        div.v-section-wrapper .v-section--sidebar.v-section--sidebar__filter--open .region--sidebar-filter {
+          display: block; }
+      div.v-section-wrapper .v-section--sidebar.v-section--sidebar__filter--closed {
+        box-shadow: none; }
+        div.v-section-wrapper .v-section--sidebar.v-section--sidebar__filter--closed .region--sidebar-filter {
+          display: none; } }
 
 .block-wisski-linkblock {
   max-width: 1200px;

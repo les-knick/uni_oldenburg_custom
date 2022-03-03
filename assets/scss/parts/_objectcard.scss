@@ -1,14 +1,14 @@
 .object-cards {
     .views-view-grid {
         justify-content: space-between;
-        @media only screen and (max-width: $breakpoint-s) {
+        @media only screen and (max-width: $breakpoint-m) {
             flex-direction: column;
         }
         .views-view-grid__item {
             margin-right: 0;
             margin-bottom: 100px;
             flex: 0 1 45%;
-            @media only screen and (max-width: $breakpoint-s) {
+            @media only screen and (max-width: $breakpoint-m) {
                 margin-bottom: 50px;
             }
         }
