@@ -252,9 +252,9 @@ main .region--content {
     flex: 0 1 70%; }
   .v-section-wrapper .v-section--sidebar {
     flex: 0 1 30%;
-    height: 200px;
     width: 400px;
-    margin-top: 433px; }
+    margin-top: 326px;
+    z-index: 99; }
     @media only screen and (max-width: 576px) {
       .v-section-wrapper .v-section--sidebar {
         margin-top: 333px; } }
@@ -522,6 +522,9 @@ textarea {
   .node--type-inhalte-beitragen .node__content .layout--twocol .layout__region--top,
   .node--type-inhalte-beitragen .node__content .layout--twocol .layout__region--bottom {
     display: none; }
+
+header#header {
+  z-index: 999; }
 
 header .container {
   max-width: 100vw; }
@@ -800,6 +803,9 @@ ul.facet-active {
   .container--sidebar .block-facets .facets-soft-limit-link {
     margin-top: 20px;
     display: block; }
+
+[data-drupal-facet-id="teilsammlung"] input[type="checkbox"] {
+  border-radius: 0; }
 
 @media only screen and (max-width: 576px) {
   div.v-section-wrapper {

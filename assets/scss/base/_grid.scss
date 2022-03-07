@@ -44,9 +44,9 @@ main .region--content {
     }
     .v-section--sidebar {
         flex: 0 1 30%;
-        height: 200px;
         width: 400px;
-        margin-top: 433px;
+        margin-top: 326px;
+        z-index: 99;
         @media only screen and (max-width: $breakpoint-s) {
             margin-top: 333px;
         }

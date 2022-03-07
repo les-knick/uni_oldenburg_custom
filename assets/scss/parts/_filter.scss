@@ -93,6 +93,12 @@ ul.facet-active {
     }
 }
 
+[data-drupal-facet-id="teilsammlung"] {
+    input[type="checkbox"] {
+        border-radius: 0;
+    }
+}
+
 @media only screen and (max-width: $breakpoint-s) {
     div.v-section-wrapper {
         display: block;
