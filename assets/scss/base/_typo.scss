@@ -45,6 +45,10 @@ p {
 a,
 a * {
     @include font-link;
+    &:hover {
+        font-weight: 700;
+        color: $color-petrol;
+    }
 }
 
 .link--arrow a,
@@ -77,8 +81,10 @@ a * {
     }
 }
 
-.btn {
+.btn,
+.button {
     &--primary {
+        @include font-link;
         padding: 20px;
         background-color: $color-petrol;
         color: white!important;
@@ -96,6 +102,12 @@ a * {
             padding-left: 20px;
             padding-top: 2px;
             font-size: 2rem;
+        }
+        cursor: pointer;
+        &:hover {
+            font-weight: 700;
+            background-color: $color-petrol;
+            border: none;
         }
     }
 }

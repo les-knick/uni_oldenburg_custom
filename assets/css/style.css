@@ -111,6 +111,10 @@ p {
 a,
 a * {
   color: #04435A; }
+  a:hover,
+  a *:hover {
+    font-weight: 700;
+    color: #04435A; }
 
 .link--arrow a,
 .link--arrow .a {
@@ -156,7 +160,9 @@ a * {
 .font--white {
   color: white !important; }
 
-.btn--primary {
+.btn--primary,
+.button--primary {
+  color: #04435A;
   padding: 20px;
   background-color: #04435A;
   color: white !important;
@@ -168,12 +174,19 @@ a * {
   width: fit-content;
   width: -moz-fit-content;
   width: -ms-fit-content;
-  width: -webkit-fit-content; }
-  .btn--primary::after {
+  width: -webkit-fit-content;
+  cursor: pointer; }
+  .btn--primary::after,
+  .button--primary::after {
     content: '›';
     padding-left: 20px;
     padding-top: 2px;
     font-size: 2rem; }
+  .btn--primary:hover,
+  .button--primary:hover {
+    font-weight: 700;
+    background-color: #04435A;
+    border: none; }
 
 .text-content a.btn--primary,
 .cke_editable a.btn--primary {
@@ -591,7 +604,11 @@ header.site-header--frontpage {
           header.site-header--frontpage .site-header--frontpage__header-content .site-header--frontpage__header-content__content-wrapper .site-header--frontpage__header-content__content-wrapper__inner {
             width: 100%; } }
         header.site-header--frontpage .site-header--frontpage__header-content .site-header--frontpage__header-content__content-wrapper .site-header--frontpage__header-content__content-wrapper__inner h1 {
-          max-width: 740px; }
+          max-width: 740px;
+          hyphens: none;
+          -ms-hyphens: none;
+          -webkit-hyphens: none;
+          -moz-hyphens: none; }
           @media only screen and (max-width: 981px) {
             header.site-header--frontpage .site-header--frontpage__header-content .site-header--frontpage__header-content__content-wrapper .site-header--frontpage__header-content__content-wrapper__inner h1 {
               margin-top: 50px;
@@ -603,7 +620,10 @@ header.site-header--frontpage {
           border-radius: 0; }
         header.site-header--frontpage .site-header--frontpage__header-content .site-header--frontpage__header-content__content-wrapper .site-header--frontpage__header-content__content-wrapper__inner .site-header--frontpage__header-content__content-wrapper__inner__form button {
           font-size: 20px;
-          margin: 30px auto; }
+          margin: 30px auto;
+          cursor: pointer; }
+          header.site-header--frontpage .site-header--frontpage__header-content .site-header--frontpage__header-content__content-wrapper .site-header--frontpage__header-content__content-wrapper__inner .site-header--frontpage__header-content__content-wrapper__inner__form button:hover {
+            font-weight: 700; }
         header.site-header--frontpage .site-header--frontpage__header-content .site-header--frontpage__header-content__content-wrapper .site-header--frontpage__header-content__content-wrapper__inner .site-header--frontpage__header-content__content-wrapper__inner__form input,
         header.site-header--frontpage .site-header--frontpage__header-content .site-header--frontpage__header-content__content-wrapper .site-header--frontpage__header-content__content-wrapper__inner .site-header--frontpage__header-content__content-wrapper__inner__form button {
           display: block; }
@@ -759,24 +779,11 @@ body {
   .object-cards .view-filters .views-exposed-form.form--inline input.form-text {
     border: none;
     border-radius: 0; }
-  .object-cards .view-filters .views-exposed-form.form--inline input.button {
-    padding: 20px;
-    background-color: #04435A;
-    color: white !important;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.16);
-    border: none;
-    border-radius: 4px;
-    display: block;
-    margin-top: 20px;
-    width: fit-content;
-    width: -moz-fit-content;
-    width: -ms-fit-content;
-    width: -webkit-fit-content; }
-    .object-cards .view-filters .views-exposed-form.form--inline input.button::after {
-      content: '›';
-      padding-left: 20px;
-      padding-top: 2px;
-      font-size: 2rem; }
+  .object-cards .view-filters .views-exposed-form.form--inline input.button::after {
+    content: '›';
+    padding-left: 20px;
+    padding-top: 2px;
+    font-size: 2rem; }
 
 ul.facet-inactive,
 ul.facet-active {

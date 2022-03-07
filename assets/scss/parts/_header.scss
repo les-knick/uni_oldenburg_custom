@@ -82,6 +82,10 @@ header.site-header--frontpage {
                         margin-top: 50px;
                         text-align: center;
                     }
+                    hyphens: none;
+                    -ms-hyphens: none;
+                    -webkit-hyphens: none;
+                    -moz-hyphens: none;
                 }
                 .site-header--frontpage__header-content__content-wrapper__inner__form {
                     input {
@@ -93,6 +97,10 @@ header.site-header--frontpage {
                     button {
                         font-size: 20px;
                         margin: 30px auto;
+                        cursor: pointer;
+                        &:hover {
+                            font-weight: 700;
+                        }
                     }
                     input,
                     button {
