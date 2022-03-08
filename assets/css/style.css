@@ -552,7 +552,8 @@ header .sticky-header-toggle {
     border-top: solid 3px #04435A; }
 
 header #block-uni-oldenburg-custom-branding {
-  background-color: white; }
+  background-color: white;
+  background: white; }
 
 header .primary-nav__menu-link-inner:after {
   border-color: #04435A; }
