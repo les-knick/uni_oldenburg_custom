@@ -506,6 +506,8 @@ textarea {
     font-weight: 700; }
   .node--type-inhalte-beitragen .node__content .layout--twocol .layout__region--second .form-actions {
     justify-content: flex-end; }
+    .node--type-inhalte-beitragen .node__content .layout--twocol .layout__region--second .form-actions:hover {
+      transform: scale(1.1); }
     .node--type-inhalte-beitragen .node__content .layout--twocol .layout__region--second .form-actions::after {
       background-image: url(../img/arrow--right--blue.png);
       background-size: 100% 100%;
@@ -526,12 +528,12 @@ textarea {
     max-width: 100%; }
     .node--type-inhalte-beitragen .node__content .layout--twocol .layout__region--second input.form-submit,
     .node--type-inhalte-beitragen .node__content .layout--twocol .layout__region--second textarea.form-submit {
-      background-color: transparent;
+      background-color: transparent !important;
       border: none;
-      color: #04435A;
-      padding-left: 0;
-      padding-right: 0;
-      height: auto; }
+      color: #04435A !important;
+      padding: 0;
+      height: auto;
+      box-shadow: none; }
   .node--type-inhalte-beitragen .node__content .layout--twocol .layout__region--top,
   .node--type-inhalte-beitragen .node__content .layout--twocol .layout__region--bottom {
     display: none; }
@@ -550,7 +552,7 @@ header .sticky-header-toggle {
     border-top: solid 3px #04435A; }
 
 header #block-uni-oldenburg-custom-branding {
-  background: none; }
+  background-color: white; }
 
 header .primary-nav__menu-link-inner:after {
   border-color: #04435A; }

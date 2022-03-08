@@ -19,6 +19,9 @@
                 }
                 .form-actions {
                     justify-content: flex-end;
+                    &:hover {
+                        transform: scale(1.1);
+                    }
                     &::after {
                         @include after-link;
                         transform: translateY(1px);
@@ -33,12 +36,12 @@
                     border-radius: 0;
                     max-width: 100%;
                     &.form-submit {
-                        background-color: transparent;
+                        background-color: transparent!important;
                         border: none;
-                        color: $color-petrol;
-                        padding-left: 0;
-                        padding-right: 0;
+                        color: $color-petrol!important;
+                        padding: 0;
                         height: auto;
+                        box-shadow: none;
                     }
                 }
             }

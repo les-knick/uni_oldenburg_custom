@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", noLinksInLinkblock);
 document.addEventListener("DOMContentLoaded", getSearchString);
 
 
-function changeHomeLogo() {
+/* function changeHomeLogo() {
     jQuery(document).ready(function($) {
         $(".site-header--frontpage .site-branding__logo img").attr("src", "themes/custom/uni_oldenburg_custom/assets/img/logo-free.png");
     });
@@ -24,7 +24,7 @@ function changeHomeLogoOnScroll() {
             $(".site-header--frontpage .site-branding__logo img").attr("src", "themes/custom/uni_oldenburg_custom/assets/img/logo-free.png");
         }
     });
-}
+} */
 
 function noLinksInLinkblock() {
     jQuery(document).ready(function($) {
