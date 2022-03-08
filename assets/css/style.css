@@ -584,7 +584,7 @@ header.site-header--frontpage {
     right: 0;
     top: 0;
     width: 100vw;
-    height: 700px; }
+    height: 750px; }
   header.site-header--frontpage .site-header--frontpage__overlay--orange {
     background-color: #FAA737;
     mix-blend-mode: multiply; }
@@ -593,7 +593,8 @@ header.site-header--frontpage {
     align-items: center; }
     header.site-header--frontpage .site-header--frontpage__header-content .site-header--frontpage__header-content__content-wrapper {
       gap: 100px;
-      align-items: center; }
+      align-items: center;
+      margin-top: 150px; }
       @media only screen and (max-width: 981px) {
         header.site-header--frontpage .site-header--frontpage__header-content .site-header--frontpage__header-content__content-wrapper {
           flex-direction: column;

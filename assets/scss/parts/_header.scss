@@ -53,7 +53,7 @@ header.site-header--frontpage {
         right: 0;
         top: 0;
         width: 100vw;
-        height: 700px;
+        height: 750px;
     }
     .site-header--frontpage__overlay--orange {
         background-color: $color-brown;
@@ -65,6 +65,7 @@ header.site-header--frontpage {
         .site-header--frontpage__header-content__content-wrapper {
             gap: 100px;
             align-items: center;
+            margin-top: 150px;
             @media only screen and (max-width: $breakpoint-m) {
                 flex-direction: column;
                 gap: 30px;
