@@ -1,8 +1,3 @@
-window.onscroll = function() {
-    changeHomeLogoOnScroll()
-};
-
-document.addEventListener("DOMContentLoaded", changeHomeLogo);
 document.addEventListener("DOMContentLoaded", noLinksInLinkblock);
 document.addEventListener("DOMContentLoaded", getSearchString);
 
