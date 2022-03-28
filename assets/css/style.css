@@ -937,7 +937,8 @@ footer.site-footer {
     padding-top: 100px;
     padding-bottom: 200px;
     padding-left: 0;
-    padding-right: 0; }
+    padding-right: 0;
+    gap: 50px; }
     @media only screen and (max-width: 1236px) {
       footer.site-footer .site-footer__inner {
         padding-left: 18px;
