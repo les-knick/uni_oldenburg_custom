@@ -801,6 +801,9 @@ ul.facet-active {
       background-image: url(/themes/custom/uni_oldenburg_custom/assets/img/checkbox-checked.jpg);
       border: none;
       background-size: 100%; }
+    ul.facet-inactive li label,
+    ul.facet-active li label {
+      display: inline !important; }
 
 .block-facet--range-slider .block__content {
   padding-left: 20px;
