@@ -818,7 +818,7 @@ ul.facet-active {
     margin-top: 80px; }
   .block-facet--range-slider .block__content .ui-slider-range .ui-slider-tip {
     background-color: #F0F0F0; }
-  .block-facet--range-slider .block__content .ui-slider-range .ui-slider-tip::after {
+  .block-facet--range-slider .block__content .ui-slider-range .ui-slider-tip:after {
     content: '';
     width: 1px;
     height: 23px;

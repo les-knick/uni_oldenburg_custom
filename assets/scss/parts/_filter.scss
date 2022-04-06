@@ -77,7 +77,7 @@ ul.facet-active {
         .ui-slider-range .ui-slider-tip {
             background-color: $color-grey;
         }
-        .ui-slider-range .ui-slider-tip::after {
+        .ui-slider-range .ui-slider-tip:after {
             content: '';
             width: 1px;
             height: 23px;
