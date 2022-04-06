@@ -826,8 +826,8 @@ ul.facet-active {
     color: #FAA737; }
 
 span.ui-slider-tip {
-  border: none;
-  background-color: #F0F0F0; }
+  border: none !important;
+  background-color: #F0F0F0 !important; }
 
 span.ui-slider-tip::after {
   content: '';
@@ -841,12 +841,11 @@ span.ui-slider-tip::after {
   left: 50% !important; }
 
 span.ui-slider-tip::before {
-  border: none !important;
-  background-color: #F0F0F0; }
+  border: none !important; }
 
-.ui-slider-handle:nth-child(2) span.ui-slider-tip {
+.ui-slider-handle:nth-child(3) span.ui-slider-tip {
   top: -50px !important; }
-  .ui-slider-handle:nth-child(2) span.ui-slider-tip::after {
+  .ui-slider-handle:nth-child(3) span.ui-slider-tip::after {
     height: 43px !important; }
 
 .container--sidebar h2.block__title {

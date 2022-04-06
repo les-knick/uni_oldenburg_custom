@@ -97,8 +97,8 @@ ul.facet-active {
 }
 
 span.ui-slider-tip {
-    border: none;
-    background-color: $color-grey;
+    border: none!important;
+    background-color: $color-grey!important;
 }
 
 span.ui-slider-tip::after {
@@ -115,10 +115,9 @@ span.ui-slider-tip::after {
 
 span.ui-slider-tip::before {
     border: none!important;
-    background-color: $color-grey;
 }
 
-.ui-slider-handle:nth-child(2) span.ui-slider-tip {
+.ui-slider-handle:nth-child(3) span.ui-slider-tip {
     top: -50px!important;
     &::after {
         height: 43px!important;
