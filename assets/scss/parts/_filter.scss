@@ -113,6 +113,18 @@ ul.facet-active {
     }
 }
 
+span.ui-slider-tip::after {
+    content: '';
+    width: 1px;
+    height: 23px;
+    background-color: $color-petrol;
+    position: absolute;
+    border: none;
+    margin: 0;
+    top: 20px;
+    left: 50%;
+}
+
 .container--sidebar {
     h2.block__title {
         font-size: 20px;

@@ -841,6 +841,17 @@ ul.facet-active {
   .block-facet--range-slider .block__content .ui-slider-pips [class*=ui-slider-pip-selected] {
     color: #FAA737; }
 
+span.ui-slider-tip::after {
+  content: '';
+  width: 1px;
+  height: 23px;
+  background-color: #04435A;
+  position: absolute;
+  border: none;
+  margin: 0;
+  top: 20px;
+  left: 50%; }
+
 .container--sidebar h2.block__title {
   font-size: 20px;
   color: black !important;
