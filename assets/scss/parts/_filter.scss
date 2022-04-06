@@ -74,10 +74,10 @@ ul.facet-active {
         .ui-slider-horizontal.ui-slider-pips {
             margin-top: 80px;
         }
-        .ui-slider-float .ui-slider-handle .ui-slider-pip .ui-slider-tip {
+        .ui-slider-range .ui-slider-handle .ui-slider-tip {
             background-color: $color-grey;
         }
-        .ui-slider-float .ui-slider-handle .ui-slider-pip .ui-slider-tip::after {
+        .ui-slider-range .ui-slider-handle .ui-slider-tip::after {
             content: '';
             width: 1px;
             height: 23px;
@@ -88,7 +88,7 @@ ul.facet-active {
             top: 20px;
             left: 50%;
         }
-        .ui-slider-float .ui-slider-handle:last-child .ui-slider-pip .ui-slider-tip {
+        .ui-slider-range .ui-slider-handle:last-child .ui-slider-tip {
             top: -50px;
             &::after {
                 height: 43px;
