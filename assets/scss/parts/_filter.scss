@@ -71,6 +71,29 @@ ul.facet-active {
     .block__content {
         padding-left: 20px;
         padding-right: 20px;
+        .ui-slider-horizontal.ui-slider-pips {
+            margin-top: 80px;
+        }
+        .ui-slider-float .ui-slider-handle .ui-slider-pip .ui-slider-tip-label {
+            background-color: $color-grey;
+        }
+        .ui-slider-float .ui-slider-handle .ui-slider-pip .ui-slider-tip-label::after {
+            content: '';
+            width: 1px;
+            height: 23px;
+            background-color: $color-petrol;
+            position: absolute;
+            border: none;
+            margin: 0;
+            top: 20px;
+            left: 50%;
+        }
+        .ui-slider-float .ui-slider-handle:last-child .ui-slider-pip .ui-slider-tip-label {
+            top: -50px;
+            &::after {
+                height: 43px;
+            }
+        }
         .ui-slider-handle.ui-corner-all.ui-state-default {
             border-radius: 50%;
             background-color: $color-petrol;
