@@ -38,3 +38,13 @@ footer.site-footer {
         }
     }
 }
+
+.eu-cookie-compliance-banner.eu-cookie-compliance-banner-info.eu-cookie-compliance-banner--opt-in {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 100%;
+    .popup-content.info.eu-cookie-compliance-content {
+        height: min-content;
+    }
+}
