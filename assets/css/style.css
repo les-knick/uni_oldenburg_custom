@@ -993,3 +993,11 @@ footer.site-footer {
         color: white; }
         footer.site-footer .site-footer__inner .site-footer__inner__menu-wrapper a:hover {
           text-decoration: underline; }
+
+.eu-cookie-compliance-banner.eu-cookie-compliance-banner-info.eu-cookie-compliance-banner--opt-in {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 100%; }
+  .eu-cookie-compliance-banner.eu-cookie-compliance-banner-info.eu-cookie-compliance-banner--opt-in .popup-content.info.eu-cookie-compliance-content {
+    height: min-content; }
